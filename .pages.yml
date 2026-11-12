@@ -1,0 +1,47 @@
+media:
+  input: sarab/assets/img
+  output: assets/img
+
+content:
+  - name: site_settings
+    label: Site & Hero Settings
+    type: file
+    path: sarab/data/settings.json
+    fields:
+      - name: store_name
+        label: Store Name
+        type: string
+      - name: hero_title
+        label: Main Headline
+        type: string
+      - name: hero_subtitle
+        label: Hero Description
+        type: text
+      - name: whatsapp_number
+        label: WhatsApp Order Number (with country code)
+        type: string
+
+  - name: products
+    label: Menu & Products
+    type: file
+    path: sarab/data/menu.json
+    fields:
+      - name: items
+        label: Food & Product Items
+        type: list
+        fields:
+          - name: name
+            label: Item Name
+            type: string
+          - name: price
+            label: Price
+            type: string
+          - name: category
+            label: Category
+            type: string
+          - name: description
+            label: Short Description
+            type: text
+          - name: image
+            label: Item Photo
+            type: image
